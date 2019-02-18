@@ -1,0 +1,204 @@
+{
+  "Personal": {
+    "Name": "Batista Dominique",
+    "Current Position": "Research Software Engineer & Web developer",
+    "Phone": "+33(0) 621754079",
+    "Email": "batistadominique@hotmail.com",
+    "Picture": "https://media.licdn.com/dms/image/C4E03AQHKpId8Z-80TA/profile-displayphoto-shrink_100_100/0?e=1553126400&v=beta&t=nBo4Ghw8VAggIf0o9KW-4UkoALckQvxwsV1jBptPqU8",
+    "Quote": {
+      "Description": "Passion is what gets you through the hardest times that might otherwise make strong men weak, or make you give up",
+      "From": "Neil deGrasse Tyson in",
+      "In": "the Washington Post, June 5, 2012"
+    },
+    "Description": {
+      "label": "About Me",
+      "desc": "I am a young developer specialized in creating tools and software for scientific researchers and academics. My current activities focus onto delivering <b>clean, tested and documented open-source code</b> to help <b>structuring metadata over the web</b>. My side activities focus onto producing knowledge and scientific papers as well as representing the team in international conferences. I am passionate with computer (hardware, web), science (biology and physics), video games and much more."
+    }
+  },
+  "Education": {
+    "label": "Education",
+    "items": [
+      {
+        "Degree": "Master degree in",
+        "Major": "Bioinformatics",
+        "Description": ["Software Engineering, OOP, Omics, Biostatistics"],
+        "School": "University of Bordeaux",
+        "Dates": "2012-2014"
+      },
+      {
+        "Degree": "Bachelor degree in",
+        "Major": "Physiology, Biochemistry and Neuroscience",
+        "Description": ["ERASMUS exchange program"],
+        "School": "Birmingham University",
+        "Dates": "2010-2011"
+      }
+    ]
+  },
+  "Positions": {
+    "label": "Positions",
+    "items": [
+      {
+        "Position": "Research Software and Knowledge Engineer,",
+        "Employer": "Oxford e-research Center, University of Oxford",
+        "Dates": "May 2018 - Today",
+        "Description": [
+          "Develop software that help data and software providers to achieve FAIRness (Findable, Accessible, Interoperable and Reusable)",
+          "Apply and promote software engineering good practices"
+        ]
+      },
+      {
+        "Position": "Web Engineer,",
+        "Employer": "French Institute of Bioinformatics (IFB), CNRS UMS-3601, Paris",
+        "Dates": "Sept. 2015 - Apr. 2018",
+        "Description": [
+          "Create and maintain IFB's website located at www.france-bioinformatique.fr",
+          "Advocate for the French community as ELIXIR France representative in the Bioschemas project",
+          "Structuring metadata over the web: SEO, semantic markup, semantic validation and editing"
+        ]
+      }
+    ]
+  },
+  "Resources": {
+    "FA mapping": {
+      "Drupal": "fab fa-drupal",
+      "Javascript": "fab fa-js",
+      "PHP": "fab fa-php",
+      "Python": "fab fa-python",
+      "AngularJS": "fab fa-angular",
+      "MySQL": "fas fa-database"
+    },
+    "Non-FA icons": {
+      "github":"assets/img/github.svg",
+      "travis":"assets/img/travis.png",
+      "coveralls":"assets/img/coveralls.png",
+      "live":"assets/img/coveralls.png",
+      "documentation": "assets/img/rtd2.png"
+    }
+  },
+  "Skills": {
+    "label": "skills/languages",
+    "items": [
+      {
+        "Skill": "Python",
+        "Libraries": {
+          "label": "Libraries/Tools",
+          "items": "jinja2, requests, jsonschema, nose, mock, pyopenssl, DeepDiff, mock, xmljson, JSONBender, falcon, gunicorn, flake8, coverage, coveralls"
+        },
+        "Description": "Build a suite of tools to create, compare and merge complex set of JSON-schemas as JSON-LD. Expose functions through a RESTful API."
+      },
+      {
+        "Skill": "Javascript",
+        "Libraries": {
+          "label": "Libraries/Frameworks",
+          "items": "AngularJS, JQuery, hopscotch, AJV"
+        },
+        "Description": "Document JSON-Schemas as JSON-LD with a web format. Create dynamic web forms."
+      },
+      {
+        "Skill": "Software Engineering",
+        "Libraries": {
+          "label": "Tools",
+          "items": "GitHub, Travis-CI, Coverage/Coveralls, Sphinx/ReadTheDocs, Google Analytics/Search Console, schema.org"
+        },
+        "Description": "Continuous  integration, unit testing & documentation; SEO"
+      },
+      {
+        "Skill": "Drupal 7",
+        "Libraries": {
+          "label": "Languages",
+          "items": "PHP, JavaScript, MySQL, Apache, HTML/CSS"
+        },
+        "Description": "Full-stack and continuous development of a website through a CMS"
+      }
+    ]
+  },
+  "Extra": {
+    "Languages": {
+      "label": "Languages",
+      "items": {
+        "French": "Native",
+        "English": "Fluent"
+      }
+    },
+    "Contact": {
+      "label": "contact/link",
+      "items": [
+        {
+          "name": "batisatdominique@hotmail.com"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/dominique-batista-7696b093/",
+          "label": "dominique-batista-7696b093"
+        },
+        {
+          "name": "GitHub",
+          "link": "https://github.com/terazus",
+          "label": "Terazus"
+        },
+        {
+          "name": "Mobility",
+          "label": "International"
+        }
+      ]
+    },
+    "Projects": {
+      "label": "latest projects",
+      "items": [
+        {
+          "name": "JSONLDSchema",
+          "items": [
+            {
+              "name": "GitHub",
+              "link": "https://github.com/FAIRsharing/jsonldschema"
+            },
+            {
+              "name": "Travis Build",
+              "link": "https://travis-ci.org/FAIRsharing/jsonldschema"
+            },
+            {
+              "name": "Coveralls",
+              "link": "https://coveralls.io/github/FAIRsharing/jsonldschema?branch=master"
+            },
+            {
+              "name": "Documentation",
+              "link": "https://jsonldschema.readthedocs.io/en/latest/?badge=latest"
+            }
+          ]
+        },
+        {
+          "name": "JSONShema Documenter",
+          "items": [
+            {
+              "name": "GitHub",
+              "link": "https://github.com/FAIRsharing/JSONschema-documenter"
+            },
+            {
+              "name": "Live",
+              "link": "https://fairsharing.github.io/JSONschema-documenter/"
+            }
+          ]
+        },
+        {
+          "name": "JSONShema Compare",
+          "items": [
+            {
+              "name": "GitHub",
+              "link": "https://github.com/FAIRsharing/JSONschema-compare-and-view"
+            }
+          ]
+        },
+        {
+          "name": "Bioschemas Validator",
+          "items": [
+            {
+              "name": "GitHub",
+              "link": "https://github.com/terazus/bioschemas_validator_drupal7"
+            }
+          ]
+        }
+      ]
+    }
+  }
+
+}

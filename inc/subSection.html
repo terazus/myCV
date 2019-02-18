@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card-header">
+        <h2>{{data.label}}</h2>
+    </div>
+    <div class="card-body">
+        <div ng-repeat="item in data.items">
+
+            <h3>{{item["Dates"]}}</h3>
+
+            <h4 ng-if="item['Position']">
+                <b>{{item['Position']}}</b> {{item['Employer']}}
+            </h4>
+
+            <h4 ng-if="item['Degree']">
+                <b>{{item['Degree']}}</b> {{item['Major']}}, {{item['School']}}
+            </h4>
+
+            <p ng-repeat="desc in item['Description']">{{desc}}.</p>
+
+            <hr class="black" ng-if="!$last" />
+
+        </div>
+    </div>
+</div>

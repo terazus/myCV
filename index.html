@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="curriculumApp">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>DB@RSE Curriculum</title>
+        <link rel="stylesheet" href="lib/cosmo.min.css">
+        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet"
+              href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+              integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+              crossorigin="anonymous">
+
+        <script type="text/javascript" src="lib/jquery.js"></script>
+        <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+        <script type="text/javascript" src="lib/angular.js"></script>
+        <script type="text/javascript" src="lib/angular-route.min.js"></script>
+        <script type="text/javascript" src="lib/angular-aria.min.js"></script>
+        <script type="text/javascript" src="lib/angular-animate.min.js"></script>
+        <script type="text/javascript" src="lib/angular-messages.min.js"></script>
+
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+
+    <body ng-controller="FrontController as Curriculum">
+
+    <!-- NAV BAR TOP -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">- DB@RSE University of Oxford -</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" ng-click="Curriculum.data=Curriculum.data_en">
+                    <a class="nav-link" href="#">English</a>
+                </li>
+                <li class="nav-item" ng-click="Curriculum.data=Curriculum.data_fr">
+                    <a class="nav-link" href="#">French</a>
+                </li>
+                <li class="nav-item">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Download PDF</a>
+                            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 39px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <a target="_blank" href="pdf-EN.pdf" class="dropdown-item">English</a>
+                                <a class="dropdown-item" target="_blank" href="pdf-FR.pdf">French</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+
+        <div class="row mainContainer">
+
+            <!-- LEFT COLUMN -->
+            <div class="col-lg-3 col-md-3 col-sm-12 colLeft">
+
+                <!-- TOP -->
+                <img class="face" src="{{Curriculum.data['Personal']['Picture']}}">
+                <div class="candidateName">
+                    <h1>{{Curriculum.data['Personal']['Name']}}, {{Curriculum.data['Personal']['Current Position']}}</h1>
+                </div>
+
+                <hr class="white" />
+
+                <!-- QUOTE -->
+                <blockquote class="blockquote">
+                    <p class="mb-0">{{Curriculum.data['Personal']['Quote']['Description']}}</p>
+                    <footer class="blockquote-footer">
+                        {{Curriculum.data['Personal']['Quote']['From']}}
+                        <cite title="Source Title">{{Curriculum.data['Personal']['Quote']['In']}}</cite>
+                    </footer>
+                </blockquote>
+
+                <hr class="white" />
+
+                <!-- LANGUAGE -->
+                <div class="language">
+                    <label>{{Curriculum.data['Extra']['Languages']['label']}}</label>
+                    <p ng-repeat="(k,v) in Curriculum.data['Extra']['Languages']['items']">
+                        {{k}}: {{v}}
+                    </p>
+                </div>
+
+                <hr class="white" />
+
+                <!-- CONTACT -->
+                <div class="language projectsLinks" id="links">
+                    <label>{{Curriculum.data['Extra']['Contact']['label']}}</label>
+                    <p ng-repeat="item in Curriculum.data['Extra']['Contact']['items']">
+                        {{item.name}}<span ng-if="item.label">: </span>
+                        <a target="_blank" href="{{item.link}}" ng-if="item.link">
+                            {{item.label}}
+                        </a>
+                        <span ng-if="!item.link"> {{item.label}}</span>
+                    </p>
+                </div>
+
+                <hr class="white" />
+
+                <!-- PROJECTS LINKS -->
+                <div class="language projectsLinks">
+                    <label>{{Curriculum.data['Extra']['Projects']['label']}}</label>
+                    <div ng-repeat="item in Curriculum.data['Extra']['Projects']['items']" class="items">
+                        <b>{{item.name}}</b> <br>
+                        <a ng-repeat="subItem in item['items']" href="{{subItem.link}}">
+                            <span ng-if="!$first"> - </span>{{subItem.name}}
+                        </a>
+                        <hr ng-if="!$last" class="white miniHR" />
+                    </div>
+
+                </div>
+
+                <hr class="white" />
+
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="col-lg-9 col-md-9 col-sm-12 colRight">
+
+                <!-- ABOUT -->
+                <div class="card aboutMe">
+                    <div class="card-header"><h2>{{Curriculum.data['Personal']['Description']['label']}}</h2></div>
+                    <div class="card-body">
+                        <p ng-bind-html="Curriculum.data['Personal']['Description']['desc']"></p>
+                    </div>
+                </div>
+
+                <!-- POSITIONS -->
+                <div sub-section="Curriculum.data['Positions']"></div>
+
+                <!-- SKILLS -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2>{{Curriculum.data['Skills']['label']}}</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="Skill" ng-repeat="skill in Curriculum.data['Skills']['items']">
+                            <h3> {{skill['Skill']}}</h3>
+                            <h4> {{skill['Description']}} </h4>
+                            <p><b>{{skill['Libraries']['label']}}</b>: {{skill['Libraries']['items']}}</p>
+                            <hr class="black" ng-if="!$last" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EDUCATION -->
+                <div sub-section="Curriculum.data['Education']"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    </body>
+
+
+</html>

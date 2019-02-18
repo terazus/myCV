@@ -1,0 +1,266 @@
+/* #################### ####################  ####################  ####################  */
+/* GENERAL */
+/* #################### */
+body {
+    padding-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 10px 10px 0 10px;
+}
+
+h2, h4 {
+    padding:0;
+    margin:0;
+}
+
+h3 {
+    padding: 0 0 5px 0;
+}
+
+h2, h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+h4, p{
+    font-size: 1.1rem;
+}
+
+.aboutMe p{
+    font-size: 0.9375rem;
+    line-height: 1.3 !important;
+}
+
+p {
+    font-weight: 200;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+label {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.language p, .language div.items{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.language div.items{
+    font-weight:200;
+    font-size: 0.9375rem;
+}
+
+/* ####################  ####################  ####################  #################### */
+/* CUSTOMIZE Bootstrap */
+/* #################### */
+
+.container {
+    border:1px solid #ccc;
+    margin-top: 10px;
+}
+
+.card{
+    margin-top:10px;
+}
+
+
+/* ####################  ####################  ####################  #################### */
+/* COLORS AND SHADOWS */
+/* #################### */
+
+.colLeft{
+    background: #5F9EA0;
+}
+
+h2 {
+    color: #5F9EA0;
+    text-transform: uppercase;
+}
+
+div.projectsLinks a {
+    color: black !important;
+}
+
+h3 {
+    color: #DEB887;
+}
+
+.card,
+.container {
+    box-shadow: 3px 3px 4px #ccc;
+}
+
+nav{
+    background-color: #5F9EA0 !important;
+}
+
+.candidateName,
+.blockquote *,
+label,
+.language *{
+    color: white;
+}
+
+hr.white{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+hr.black {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.card-header {
+    background-color: #FAF0E6;
+}
+
+.nav-pills .show > .nav-link {
+    background-color: #FAF0E6;
+
+}
+
+.navbar-dark .navbar-nav .show > .nav-link{
+    color: #5f9ea0;
+}
+
+/* ####################  ####################  ####################  #################### */
+/* OTHER */
+/* #################### */
+
+.colRight {
+    padding-bottom: 10px;
+}
+
+img.face{
+    width:100px;
+    height:100px;
+    border:3px solid white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    left:0;
+    right:0;
+    margin: 10px auto;
+    display: block;
+}
+
+.candidateName {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.aboutMe {
+    text-align: justify;
+}
+
+.aboutMe .card-body{
+    padding-top:10px;
+}
+
+blockquote.blockquote,
+blockquote *{
+    font-size: 0.8rem;
+}
+
+.blockquote-footer {
+    font-size: 100%;
+    text-align: right;
+}
+
+.language#links p,
+.language.projectsLinks p{
+    font-size: 1rem;
+}
+
+.miniHR {
+    width: 30%
+}
+
+/* ####################  ####################  ####################  #################### */
+/* FOR WKHTMLTOPDF */
+/* #################### */
+/*
+@media (max-width: 1281px) {
+    .language#links p,
+    .language.projectsLinks p,
+    p,
+    .aboutMe p {
+        font-size: 0.8rem;
+    }
+
+    .candidateName {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2, h3 {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    h3 {
+        padding: 15px 0 5px 0;
+        margin: 0;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    hr, nav.navbar {
+        display: none;
+    }
+
+    .card-body {
+        padding: 0 15px 15px 15px;
+    }
+
+    .aboutMe div.projectsLinks div.items {
+        padding-top: 15px;
+    }
+
+    .aboutMe p {
+        padding-top: 5px;
+    }
+
+    .colLeft {
+        padding-top: 30px;
+    }
+
+    .colRight {
+        padding-top: 15px;
+    }
+
+    .language {
+        margin-top: 30px;
+    }
+
+    .language label {
+        margin-bottom: 0;
+    }
+
+    img.face {
+        border:0;
+    }
+
+    .projectsLinks .items{
+        margin-top:10px
+    }
+
+}
+*/
