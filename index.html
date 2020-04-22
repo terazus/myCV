@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<!--
 <html lang="en" ng-app="curriculumApp">
 
     <head>
@@ -21,7 +23,7 @@
 
         <script type="text/javascript" src="app.js"></script>
         
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics 
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135696276-1"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
@@ -35,7 +37,7 @@
 
     <body ng-controller="FrontController as Curriculum">
 
-    <!-- NAV BAR TOP -->
+    <!-- NAV BAR TOP
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">- DB@RSE University of Oxford -</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,15 +68,15 @@
     </nav>
 
 
-    <!-- MAIN CONTENT -->
+    <!-- MAIN CONTENT
     <div class="container">
 
         <div class="row mainContainer">
 
-            <!-- LEFT COLUMN -->
+            <!-- LEFT COLUMN
             <div class="col-lg-3 col-md-3 col-sm-12 colLeft">
 
-                <!-- TOP -->
+                <!-- TOP
                 <img class="face" src="{{Curriculum.data['Personal']['Picture']}}">
                 <div class="candidateName">
                     <h1>{{Curriculum.data['Personal']['Name']}}, {{Curriculum.data['Personal']['Current Position']}}</h1>
@@ -93,7 +95,7 @@
 
                 <hr class="white" />
 
-                <!-- LANGUAGE -->
+                <!-- LANGUAGE
                 <div class="language">
                     <label>{{Curriculum.data['Extra']['Languages']['label']}}</label>
                     <p ng-repeat="(k,v) in Curriculum.data['Extra']['Languages']['items']">
@@ -103,7 +105,7 @@
 
                 <hr class="white" />
 
-                <!-- CONTACT -->
+                <!-- CONTACT
                 <div class="language projectsLinks" id="links">
                     <label>{{Curriculum.data['Extra']['Contact']['label']}}</label>
                     <p ng-repeat="item in Curriculum.data['Extra']['Contact']['items']">
@@ -117,7 +119,7 @@
 
                 <hr class="white" />
 
-                <!-- PROJECTS LINKS -->
+                <!-- PROJECTS LINKS
                 <div class="language projectsLinks">
                     <label>{{Curriculum.data['Extra']['Projects']['label']}}</label>
                     <div ng-repeat="item in Curriculum.data['Extra']['Projects']['items']" class="items">
@@ -134,10 +136,10 @@
 
             </div>
 
-            <!-- RIGHT COLUMN -->
+            <!-- RIGHT COLUMN
             <div class="col-lg-9 col-md-9 col-sm-12 colRight">
 
-                <!-- ABOUT -->
+                <!-- ABOUT
                 <div class="card aboutMe">
                     <div class="card-header"><h2>{{Curriculum.data['Personal']['Description']['label']}}</h2></div>
                     <div class="card-body">
@@ -145,10 +147,10 @@
                     </div>
                 </div>
 
-                <!-- POSITIONS -->
+                <!-- POSITIONS 
                 <div sub-section="Curriculum.data['Positions']"></div>
 
-                <!-- SKILLS -->
+                <!-- SKILLS 
                 <div class="card">
                     <div class="card-header">
                         <h2>{{Curriculum.data['Skills']['label']}}</h2>
@@ -163,7 +165,7 @@
                     </div>
                 </div>
 
-                <!-- EDUCATION -->
+                <!-- EDUCATION 
                 <div sub-section="Curriculum.data['Education']"></div>
 
             </div>
@@ -179,3 +181,20 @@
 
 
 </html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript">
+        window.location = "https://terazus.netlify.app/#/"
+    </script>
+</head>
+
+
+<body>
+</body>
+
+</html>
+
